@@ -1,1 +1,1 @@
-# COM6101-GroupProject-miniprogram
+# COM6102-GroupProject-miniprogram
