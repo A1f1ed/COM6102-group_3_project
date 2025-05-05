@@ -1,0 +1,205 @@
+(1) login
+{
+    "msg": "登录成功",
+    "code": 200,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiY29mZmUxNzM1MjA1NDk0OTU3IiwiaWF0IjoxNzQzNDE5MDkyLCJleHAiOjE3NDYwMTEwOTJ9.1e22k4gHo_sAu9FEREYJsfCv-KUqFZLYJyj4KxzcNQ4"
+}
+
+(2) findMy
+{
+    "msg": "查询我的成功",
+    "code": "A001",
+    "result": [
+        {
+            "nickName": "",
+            "userImg": "http://newcoffee.wwp666.cn:10006/assets/default.png",
+            "userBg": "http://newcoffee.wwp666.cn:10006/assets/default_bg.jpg",
+            "desc": "",
+            "vip": 0
+        }
+    ]
+}
+
+
+(3) type
+{
+    "result": [
+        {
+            "id": 1,
+            "type": "latte",
+            "typeDesc": "拿铁",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        },
+        {
+            "id": 2,
+            "type": "rena_ice",
+            "typeDesc": "瑞纳冰",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        },
+        {
+            "id": 3,
+            "type": "coffee",
+            "typeDesc": "咖啡",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        },
+        {
+            "id": 4,
+            "type": "fruit_tea",
+            "typeDesc": "水果茶",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        }
+    ],
+    "code": 400
+}
+
+(4) typeProducts
+{
+    "result": [
+        {
+            "id": 7,
+            "pid": "latte004",
+            "type": "coffee",
+            "name": "焦糖拿铁",
+            "price": "28.00",
+            "desc": "拿铁中融入醇香焦糖风味，香甜温暖，令人沉醉。\n主要原材料：浓缩咖啡，牛奶，焦糖风味糖浆。\n图片仅供参考，请以实物为准。建议送达后尽快饮用。",
+            "smallImg": "http://newcoffee.wwp666.cn:10006/images/product_small/IMG_0384_02p.jpg",
+            "largeImg": "http://newcoffee.wwp666.cn:10006/images/product_large/IMG_0384_02.jpg",
+            "typeDesc": "拿铁",
+            "isHot": 1,
+            "enname": "Caramel Latte",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        },
+        {
+            "id": 8,
+            "pid": "latte005",
+            "type": "coffee",
+            "name": "榛果拿铁",
+            "price": "28.00",
+            "desc": "榛果爱好者的选择！香甜榛果风味与咖啡牛奶融合，诠释另一种新鲜风味。\n主要原材料：浓缩咖啡，牛奶，榛子风味糖浆。\n图片仅供参考，请以实物为准。建议送达后尽快饮用。",
+            "smallImg": "http://newcoffee.wwp666.cn:10006/images/product_small/IMG_0385_02p.jpg",
+            "largeImg": "http://newcoffee.wwp666.cn:10006/images/product_large/IMG_0385_02.jpg",
+            "typeDesc": "拿铁",
+            "isHot": 1,
+            "enname": "Hazelnut Latte",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        },
+        {
+            "id": 15,
+            "pid": "coffee006",
+            "type": "coffee",
+            "name": "奥瑞白",
+            "price": "28.00",
+            "desc": "咖啡与牛奶黄金配比，奶香四溢，口感香醇。\n主要原材料：浓缩咖啡，牛奶。\n图片仅供参考，请以实物为准。建议送达后尽快饮用。",
+            "smallImg": "http://newcoffee.wwp666.cn:10006/images/product_small/IMG_0390_02p.jpg",
+            "largeImg": "http://newcoffee.wwp666.cn:10006/images/product_large/IMG_0390_02.jpg",
+            "typeDesc": "咖啡",
+            "isHot": 1,
+            "enname": "Flat White",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        },
+        {
+            "id": 16,
+            "pid": "latte006",
+            "type": "latte",
+            "name": "黑糖啵啵拿铁",
+            "price": "28.00",
+            "desc": "独特的黑糖风味拿铁，佐以Q嫩儒糯的黑糖口味珍珠，创造出层次丰富的美妙口感。（建议搅拌后饮用）\n主要原材料：浓缩咖啡，黑糖味珍珠，纯牛奶，黑糖味调味糖浆，原味调味糖浆，可选择添加搅打奶油（含香草风味糖浆）\n图片仅供参考，请以实物为准，建议取餐后尽快饮用。",
+            "smallImg": "http://newcoffee.wwp666.cn:10006/images/product_small/IMG_0392_02p.jpg",
+            "largeImg": "http://newcoffee.wwp666.cn:10006/images/product_large/IMG_0392_02.jpg",
+            "typeDesc": "拿铁",
+            "isHot": 1,
+            "enname": "Brown Sugar Bubble Latte",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        },
+        {
+            "id": 19,
+            "pid": "fruit_tea001",
+            "type": "fruit_tea",
+            "name": "满杯百香果",
+            "price": "17.00",
+            "desc": "清新又浓郁的百香果香气，混合清新茉莉茶香，加上椰果与寒天的爽滑Q弹，满杯椰香果香茶香。\n主要原材料：椰果、百香果汁、原味寒天晶球、茉莉绿茶、原味调味糖浆。\n图片仅供参考，请以实物为准，建议取餐后尽快饮用。",
+            "smallImg": "http://newcoffee.wwp666.cn:10006/images/product_small/d001_small.png",
+            "largeImg": "http://newcoffee.wwp666.cn:10006/images/product_large/d001.png",
+            "typeDesc": "水果茶",
+            "isHot": 1,
+            "enname": "Passion Fruit & Coconut Jelly Jasmine Tea",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        },
+        {
+            "id": 20,
+            "pid": "fruit_tea005",
+            "type": "fruit_tea",
+            "name": "椰子冰",
+            "price": "20.00",
+            "desc": "【不含咖啡】优选纯牛奶为底，融进满满椰香，又加入柔和香草风味，椰子控必喝。\n主要原料：纯牛奶、椰子风味粉、香草风味糖浆、原味冰沙粉、冰块、稀奶油（含香草风味糖浆）。\n图片及包装仅供参考，请以实物为准。温馨提示：瑞纳冰系列产品形态为冰沙，无法进行少冰去冰操作，请您谅解。建议送达后尽快饮用。到店饮用口感更佳。 ",
+            "smallImg": "http://newcoffee.wwp666.cn:10006/images/product_small/h001_small.png",
+            "largeImg": "http://newcoffee.wwp666.cn:10006/images/product_large/h001.png",
+            "typeDesc": "水果茶",
+            "isHot": 1,
+            "enname": "Coconut ice",
+            "createdAt": "2024-11-18T07:22:51.000Z",
+            "updatedAt": "2024-11-18T07:22:51.000Z"
+        }
+    ],
+    "code": 500
+}
+
+
+(5) productDetail
+{
+    "msg": "查询商品详情成功",
+    "code": 600,
+    "result": [
+        {
+            "pid": "latte005",
+            "type": "coffee",
+            "enname": "Hazelnut Latte",
+            "desc": "榛果爱好者的选择！香甜榛果风味与咖啡牛奶融合，诠释另一种新鲜风味。\n主要原材料：浓缩咖啡，牛奶，榛子风味糖浆。\n图片仅供参考，请以实物为准。建议送达后尽快饮用。",
+            "name": "榛果拿铁",
+            "price": "28.00",
+            "small_img": "http://newcoffee.wwp666.cn:10006/images/product_small/IMG_0385_02p.jpg",
+            "large_img": "http://newcoffee.wwp666.cn:10006/images/product_large/IMG_0385_02.jpg",
+            "is_hot": 1,
+            "type_desc": "拿铁",
+            "tem": "冷/热",
+            "tem_desc": "温度",
+            "milk": "",
+            "milk_desc": "奶",
+            "sugar": "全糖/半糖",
+            "sugar_desc": "糖",
+            "cream": "",
+            "cream_desc": "奶油"
+        }
+    ]
+}
+
+(6) searchguess
+{
+    "data": [
+        {
+            "imgUrl": "https://ww1.sinaimg.cn/mw690/006b0IMQly1hb1va5egidj333o1y0qjf.jpg",
+            "desc": "「瑞幸咖啡 x 线条小狗」情人节限定新品来了！"
+        },
+        {
+            "imgUrl": "https://p3.itc.cn/q_70/images03/20220417/563f3ccba5ea4e1f9e8fd6edd72add84.png",
+            "desc": "「瑞幸 x 椰树」 椰云拿铁上线"
+        },
+        {
+            "imgUrl": "https://pic2.zhimg.com/v2-5480a124d868813d32cce87a52dcd609_r.jpg",
+            "desc": "民生·luckin coffee 联名信用卡"
+        },
+        {
+            "imgUrl": "https://money.ycwb.com/pic/2020-12/16/90e39574-d151-4362-b556-99b8bc2555b3.jpg",
+            "desc": "人气爆款，圣诞节限时55折"
+        }
+    ]
+}

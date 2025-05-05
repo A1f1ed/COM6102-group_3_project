@@ -1,0 +1,39 @@
+
+groups:
+- name: backend-alerts
+  rules:
+  - alert: BackendServiceDown
+    expr: up{job="coffee_shop_backend"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Backend service is down"
+      description: "Backend service at {{ $labels.instance }} has been down for more than 1 minute."
+
+  - alert: HighErrorRate
+    expr: rate(http_requests_total{status=~"5.."}[5m]) / rate(http_requests_total[5m]) > 0.05
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High error rate on backend service"
+      description: "Error rate on backend service at {{ $labels.instance }} is {{ $value }} (threshold: 0.05)."
+
+  - alert: HighLatency
+    expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le)) > 1
+    for: 10m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High latency on backend service"
+      description: "95th percentile latency on backend service at {{ $labels.instance }} is {{ $value }} seconds (threshold: 1s)."
+
+  - alert: PrometheusDown
+    expr: up{job="prometheus"} == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Prometheus is down"
+      description: "Prometheus at {{ $labels.instance }} has been down for more than 1 minute."
