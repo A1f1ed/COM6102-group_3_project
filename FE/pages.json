@@ -1,0 +1,149 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+				
+			}
+		}
+	    ,
+		{
+		  "path": "pages/customer-service/customer-service",
+		  "style": {
+		    "navigationBarTitleText": "智能客服"
+		  }
+		},
+		{
+		  "path": "pages/school-customer-service/school-customer-service",
+		  "style": {
+		    "navigationBarTitleText": "校园客服"
+		  }
+		},
+		{
+            "path" : "pages/menu/menu",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "菜单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/myself/myself",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "购物车",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/cart/cart",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/register/register",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+
+        ,{
+            "path" : "pages/login/login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/detail/detail",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+        {
+        	"path" : "pages/customer-service/customer-service",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : ""
+        	}
+        },
+        {
+        	"path" : "pages/school-customer-service/school-customer-service",
+        	"style" : 
+        	{
+        		"navigationBarTitleText" : ""
+        	}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"transparentTitle": "always"
+	},
+	"uniIdRouter": {},
+	"easycom": {
+		        "autoscan": true,
+		        "custom": {
+		            "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		        }
+	 },
+
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#0c34ba",	 
+		"backgroundColor": "#ffffff",
+		 "list": [{	 
+				"iconPath": "./static/tabBar/home.png",	 
+				"selectedIconPath": "./static/tabBar/home_active.png",		 
+				"text": "首页",
+				"pagePath": "pages/index/index"
+		 },
+		{ 
+				 "iconPath": "./static/tabBar/shopbag.png",	 
+				 "selectedIconPath": "./static/tabBar/shopbag_active.png",		 
+				 "text": "购物车",
+				 "pagePath": "pages/cart/cart"
+		 },
+		{
+				 "iconPath": "./static/tabBar/menu.png",	 
+				 "selectedIconPath": "./static/tabBar/menu_active.png",		 
+				 "text": "菜单"	 ,
+				 "pagePath": "pages/menu/menu"
+		 },
+		 {
+				 "iconPath": "./static/tabBar/my.png",	 
+				 "selectedIconPath": "./static/tabBar/my_active.png",		 
+				 "text": "我的"	,
+				 "pagePath": "pages/myself/myself"}]
+	}
+		
+		
+		
+}

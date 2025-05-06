@@ -1,3 +1,9 @@
+# Welcome to Coffee Shop
+
+# Coffe Shop Frontend
+
+If you want to use this front-end code, you need to download the HbuilderX development platform first, then import the folder and run it directly.
+
 # Coffee Shop Backend API
 
 A coffee shop backend API service developed with FastAPI.
